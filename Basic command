@@ -1,0 +1,36 @@
+git init - It  creates the new local repository.
+git clone /path/to/repository - It creates a working copy of the local repository,
+git clone username@host:/pat/to/repository - This command uses a remote server.
+git add <filename>
+git add *             }- This command is used for adding files to the repository.
+
+Commiting a file--
+
+git commit -m "commit message" - 
+git commit -a                         } - It commits the files we had added with add and also commit any files changed from the begining.
+
+git push origin master - This command send's the changes to the master branch of my computer repository.
+git status - This command shows the list of files changed and then add or commit to the repository.
+
+REMOTE---
+
+git remote add origin <server> - This commands helps in connecting a remote repository.
+git remote -v - This command helps in listing all currently configured remote repositories.
+
+Branches---
+
+git checkout -b <branchname> - This command helps in creating a new branch and switching to it.
+git checkout <branchname> - this helps in switching of branches one to another.
+git branch - This command helps in listing all the branches in our repository and which branch we are currently in.
+git branch -d <branchname> - this command helps in deleting the present branch.
+git push origin <branchname> - this command helps in pushing the brach to the remote repository.
+git push --all origin - this command helps in pushing all the branches to the remote repository.
+git push origin :<branchname> - this commnad helps in deleting the branch in the remote repository.
+
+Updating the remote repository--
+
+git pull - this command helps to fetch and merge changes on the remote server to the working directory.
+git merge <branchname> - this command helps in merging different branch to our active branch.
+git diff - this command helps in viewing the merge conflicts(i.e, changes in the merged files).
+git diff --base<filename> - this command helps in seeing the conflicts in the merged files.
+git diff <sourcebranch> <targetbranch> - this command helps in preview the changes, before merging.
